@@ -2,104 +2,141 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Leozuma — Author</title>
+
+<title>Leozuma | Author</title>
 
 <style>
+
 body{
-font-family: Arial, sans-serif;
 margin:0;
-background:#f4f4f4;
-color:#333;
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
+color:white;
+}
+
+.hero{
+height:420px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#1e1e1e,#000);
 text-align:center;
 }
 
-.header{
-background:#111;
-color:white;
-padding:40px 20px;
-}
-
-.header h1{
+.hero h1{
+font-size:56px;
 margin:0;
-font-size:40px;
+letter-spacing:2px;
 }
 
-.book-section{
-margin-top:60px;
+.hero p{
+opacity:0.8;
+margin-top:10px;
+}
+
+.section{
+padding:80px 20px;
+text-align:center;
 }
 
 .book{
-background:white;
-width:320px;
-margin:auto;
-padding:25px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+display:flex;
+justify-content:center;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
 }
 
 .book img{
-width:100%;
-border-radius:8px;
+width:260px;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
 }
 
-.book h2{
-margin-top:15px;
+.book-info{
+max-width:400px;
+text-align:left;
+}
+
+.book-info h2{
+font-size:32px;
+margin-top:0;
 }
 
 .buy{
 display:inline-block;
-margin-top:15px;
-padding:12px 25px;
-background:#ff6600;
+margin-top:20px;
+padding:14px 30px;
+background:#ff6a00;
 color:white;
 text-decoration:none;
-border-radius:6px;
 font-weight:bold;
+border-radius:6px;
+transition:0.3s;
 }
 
 .buy:hover{
-background:#e05500;
+background:#ff8c33;
 }
 
 .footer{
-margin-top:80px;
-padding:20px;
-font-size:14px;
-color:#777;
+text-align:center;
+padding:40px;
+background:#000;
+opacity:0.7;
 }
+
 </style>
+
 </head>
 
 <body>
 
-<div class="header">
+<div class="hero">
+
 <h1>Leozuma</h1>
+
 <p>Author</p>
+
 </div>
 
-<div class="book-section">
+
+<div class="section">
 
 <div class="book">
 
 <img src="book.jpg">
 
+
+<div class="book-info">
+
 <h2>On My Way Home: Part One</h2>
 
 <p>
-A journey of discovery, growth, and finding the meaning of home.
+A powerful journey about finding meaning, purpose,
+and the road that leads us back home.
 </p>
 
 <a class="buy" href="https://www.amazon.com/dp/B0GPXC6GMP" target="_blank">
+
 Buy on Amazon
+
 </a>
 
 </div>
 
 </div>
 
+</div>
+
+
 <div class="footer">
+
 © 2026 Leozuma
+
 </div>
 
 </body>
+
 </html>
